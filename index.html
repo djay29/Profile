@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Dhabuwala — LLM Engineer</title>
+  <meta name="description" content="LLM Engineer building agentic AI that works in production, not just demos. Multi-agent RAG, LangGraph, real-time LLM systems. Based in Pune, India.">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Jay Dhabuwala — LLM Engineer">
+  <meta property="og:description" content="LLM Engineer building agentic AI that works in production, not just demos.">
+  <meta property="og:url"         content="https://djay29.github.io">
+
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="Jay Dhabuwala — LLM Engineer">
+  <meta name="twitter:description" content="LLM Engineer building agentic AI that works in production, not just demos.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233d6525'/%3E%3Ctext x='16' y='22' font-family='system-ui%2Csans-serif' font-size='14' font-weight='800' text-anchor='middle' fill='white'%3EJD%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav" role="banner">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#" aria-label="Jay Dhabuwala — home">JD</a>
+      <nav class="nav__links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav__resume"
+         href="Jay_Dhabuwala_Resume.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Download résumé PDF">
+        Résumé ↗
+      </a>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero__inner">
+          <p class="hero__status">
+            <span class="hero__dot" aria-hidden="true"></span>
+            Available for roles
+          </p>
+          <h1 class="hero__name">Jay Dhabuwala</h1>
+          <p class="hero__role">LLM Engineer · Agentic AI &amp; RAG Systems · Based in Pune, India</p>
+          <div class="hero__rule" role="separator" aria-hidden="true"></div>
+          <p class="hero__tagline">LLM Engineer building agentic AI that works in production, not just demos.</p>
+          <div class="hero__ctas">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="https://github.com/djay29"
+               class="btn btn--ghost"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+            <a href="Jay_Dhabuwala_Resume.pdf"
+               class="btn btn--ghost"
+               target="_blank"
+               rel="noopener noreferrer">Résumé PDF</a>
+            <a href="#contact" class="link-cta">Get in touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 class="section__title" id="about-heading">About</h2>
+
+        <div class="about__text reveal">
+          <p>I'm an LLM engineer focused on the unglamorous part of GenAI: making it reliable. Over three years — the last two at Tata Elxsi — I've built production agentic systems that real teams depend on, from multi-agent RAG pipelines to real-time LLM backends serving concurrent users.</p>
+          <p>My work centers on orchestration (LangChain, LangGraph), retrieval that actually grounds answers (hybrid BM25&nbsp;+ vector search), and tool-calling systems that let models do things, not just talk. I care about the details that separate a demo from a product: fallback logic, source attribution, hallucination control, and graceful failure.</p>
+          <p>Underneath the agentic work is a layer most LLM engineers don't have — large-scale ML and data engineering. I've trained deep-learning models across multi-GPU clusters and processed hundreds of millions of rows on Databricks. That depth shapes how I build: I know what's happening below the framework, not just how to call it.</p>
+        </div>
+
+        <div class="about__stats reveal">
+          <div class="stat">
+            <strong class="stat__num">2+</strong>
+            <span class="stat__desc">years at Tata Elxsi</span>
+          </div>
+          <div class="stat">
+            <strong class="stat__num">190M+</strong>
+            <span class="stat__desc">EV battery telemetry samples</span>
+          </div>
+          <div class="stat">
+            <strong class="stat__num">8×H100</strong>
+            <span class="stat__desc">GPU cluster</span>
+          </div>
+          <div class="stat">
+            <strong class="stat__num">20%</strong>
+            <span class="stat__desc">accuracy gain on RAG</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section__title" id="projects-heading">Projects</h2>
+
+        <div class="projects__list">
+
+          <!-- 01 -->
+          <article class="project reveal" aria-labelledby="p1-title">
+            <span class="project__num" aria-hidden="true">01</span>
+            <div class="project__body">
+              <h3 class="project__title" id="p1-title">
+                Agentic RAG for Enterprise Document Intelligence
+              </h3>
+              <div class="project__narrative">
+                <div class="narrative__row">
+                  <span class="narrative__label">Problem</span>
+                  <p class="narrative__text">Enterprise teams sat on 1000+ documents but couldn't get trustworthy answers — pure semantic search missed exact terms and codes, pure keyword search missed meaning, and neither could say when it wasn't sure.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Built</span>
+                  <p class="narrative__text">A multi-agent RAG system on LangGraph that combines BM25 keyword search with dense vector retrieval, then validates and routes intelligently: if semantic search comes back weak, the system falls back to keyword search, and if confidence is still low, it escalates to human review instead of guessing. Every answer ships with source attribution and a confidence score.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Result</span>
+                  <p class="narrative__text">~20% higher answer accuracy and ~30% fewer hallucinations versus a single-strategy baseline, with reliable, source-grounded responses across the full document set.</p>
+                </div>
+              </div>
+              <div class="project__stack">
+                <span class="tag">LangGraph</span>
+                <span class="tag">Hybrid Search (BM25 + Vector)</span>
+                <span class="tag">Elasticsearch</span>
+                <span class="tag">Claude</span>
+                <span class="tag">Confidence scoring</span>
+                <span class="tag">Fallback routing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="project reveal" aria-labelledby="p2-title">
+            <span class="project__num" aria-hidden="true">02</span>
+            <div class="project__body">
+              <h3 class="project__title" id="p2-title">AutoInsight</h3>
+              <p class="project__subtitle">Real-time agentic vehicle diagnostics</p>
+              <div class="project__narrative">
+                <div class="narrative__row">
+                  <span class="narrative__label">Problem</span>
+                  <p class="narrative__text">Vehicle diagnostic data is dense and jargon-heavy; users needed answers conversationally, in real time, with the context of their previous questions preserved.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Built</span>
+                  <p class="narrative__text">A streaming diagnostics assistant on a LangGraph agent core, served through a Flask-SocketIO backend so responses stream token-by-token to 50+ concurrent users. It calls tools to pull diagnostic data, keeps conversation memory with checkpointing across turns, and runs on AWS Bedrock for managed model access.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Result</span>
+                  <p class="narrative__text">A responsive, multi-turn assistant that turns raw diagnostics into plain-language answers — with the concurrency, memory, and error-handling needed to run in production rather than a notebook.</p>
+                </div>
+              </div>
+              <div class="project__stack">
+                <span class="tag">LangGraph</span>
+                <span class="tag">AWS Bedrock</span>
+                <span class="tag">Flask-SocketIO</span>
+                <span class="tag">Real-time streaming</span>
+                <span class="tag">Tool calling</span>
+                <span class="tag">Conversation checkpointing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="project reveal" aria-labelledby="p3-title">
+            <span class="project__num" aria-hidden="true">03</span>
+            <div class="project__body">
+              <h3 class="project__title" id="p3-title">
+                Automotive Requirements Automation
+              </h3>
+              <div class="project__narrative">
+                <div class="narrative__row">
+                  <span class="narrative__label">Problem</span>
+                  <p class="narrative__text">Writing System and Software Requirements specs to automotive standards is slow, repetitive, and easy to make inconsistent — but it can't be sloppy, because compliance depends on it.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Built</span>
+                  <p class="narrative__text">A multi-agent LangChain pipeline that generates complete, ASPICE-aligned System and Software Requirements from domain templates and regulatory constraints, using constraint-based prompting and a validation agent to keep output consistent and standards-compliant.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Result</span>
+                  <p class="narrative__text">Sharply reduced drafting time and more consistent documentation across engineering teams, without losing the compliance rigor the domain demands.</p>
+                </div>
+              </div>
+              <div class="project__stack">
+                <span class="tag">LangChain</span>
+                <span class="tag">Multi-agent orchestration</span>
+                <span class="tag">Claude Sonnet &amp; Haiku</span>
+                <span class="tag">ASPICE compliance</span>
+                <span class="tag">Constraint-based prompting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="project reveal" aria-labelledby="p4-title">
+            <span class="project__num" aria-hidden="true">04</span>
+            <div class="project__body">
+              <h3 class="project__title" id="p4-title">
+                Team Knowledge Enablement
+              </h3>
+              <div class="project__narrative">
+                <div class="narrative__row">
+                  <span class="narrative__label">Problem</span>
+                  <p class="narrative__text">Planning, execution, and sales teams kept re-asking the same questions because product knowledge was scattered across documents — onboarding was slow and answers were inconsistent.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Built</span>
+                  <p class="narrative__text">An end-to-end ingestion pipeline — S3 upload triggers an n8n workflow that chunks, embeds, and inserts documents into a vector database, with file monitoring, format validation, and retry handling — topped with a RAG chatbot that lets any team query the shared knowledge base directly.</p>
+                </div>
+                <div class="narrative__row">
+                  <span class="narrative__label">Result</span>
+                  <p class="narrative__text">Closed cross-team knowledge gaps and cut onboarding time, with a self-serve system that stays current as new documents land.</p>
+                </div>
+              </div>
+              <div class="project__stack">
+                <span class="tag">n8n</span>
+                <span class="tag">Pinecone</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">S3</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Vector DB</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== ALSO BUILT ===== -->
+    <section class="section also-built" id="also-built" aria-labelledby="also-built-heading">
+      <div class="container">
+        <h2 class="section__title" id="also-built-heading">Also Built</h2>
+
+        <div class="also-built__grid">
+
+          <article class="card reveal" aria-labelledby="card-bms">
+            <h3 class="card__title" id="card-bms">BMS Predictive Anomaly Detection</h3>
+            <p class="card__desc">Production anomaly detection over 190M+ EV battery telemetry samples for a global automotive OEM — TCN-LSTM / CNN-LSTM models across 8×H100 GPUs (PyTorch DDP), EVT/GPD anomaly thresholds, and Captum Integrated Gradients explainability.</p>
+            <div class="card__stack">
+              <span class="tag tag--neutral tag--sm">PyTorch DDP</span>
+              <span class="tag tag--neutral tag--sm">Databricks</span>
+              <span class="tag tag--neutral tag--sm">PySpark</span>
+              <span class="tag tag--neutral tag--sm">MLflow</span>
+              <span class="tag tag--neutral tag--sm">8×H100</span>
+            </div>
+          </article>
+
+          <article class="card reveal" aria-labelledby="card-drone">
+            <h3 class="card__title" id="card-drone">Drone Security System</h3>
+            <p class="card__desc">Real-time multimodal surveillance combining YOLOv8 object detection with a LangGraph agent and Claude via AWS Bedrock, using CLIP embeddings and ChromaDB for visual memory and retrieval.</p>
+            <div class="card__stack">
+              <span class="tag tag--neutral tag--sm">YOLOv8</span>
+              <span class="tag tag--neutral tag--sm">LangGraph</span>
+              <span class="tag tag--neutral tag--sm">CLIP</span>
+              <span class="tag tag--neutral tag--sm">ChromaDB</span>
+              <span class="tag tag--neutral tag--sm">Bedrock</span>
+            </div>
+            <a class="card__link"
+               href="https://github.com/djay29/drone-security-system"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="View Drone Security System on GitHub">
+              GitHub ↗
+            </a>
+          </article>
+
+          <article class="card reveal" aria-labelledby="card-news">
+            <h3 class="card__title" id="card-news">News-to-Script Automation</h3>
+            <p class="card__desc">A LangGraph workflow that pulls real-time news, scores articles for virality using LLM-based reasoning, and generates short-form video scripts — cutting manual research time by ~80%.</p>
+            <div class="card__stack">
+              <span class="tag tag--neutral tag--sm">LangGraph</span>
+              <span class="tag tag--neutral tag--sm">News APIs</span>
+              <span class="tag tag--neutral tag--sm">Claude</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section__title" id="skills-heading">Skills</h2>
+
+        <div class="skills__grid">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">LLM &amp; Agentic AI</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">LangChain</span>
+              <span class="tag tag--neutral">LangGraph</span>
+              <span class="tag tag--neutral">Multi-agent Orchestration</span>
+              <span class="tag tag--neutral">Tool Calling</span>
+              <span class="tag tag--neutral">Hybrid RAG (BM25 + Vector)</span>
+              <span class="tag tag--neutral">Adaptive Query Routing</span>
+              <span class="tag tag--neutral">Structured Output</span>
+              <span class="tag tag--neutral">Prompt Engineering</span>
+              <span class="tag tag--neutral">MCP</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Backend</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">FastAPI</span>
+              <span class="tag tag--neutral">Flask</span>
+              <span class="tag tag--neutral">Flask-SocketIO</span>
+              <span class="tag tag--neutral">Pydantic</span>
+              <span class="tag tag--neutral">REST APIs</span>
+              <span class="tag tag--neutral">Real-time Streaming</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">ML &amp; Data</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">PyTorch (DDP)</span>
+              <span class="tag tag--neutral">TCN-LSTM / CNN-LSTM</span>
+              <span class="tag tag--neutral">XGBoost / LightGBM / CatBoost</span>
+              <span class="tag tag--neutral">Databricks</span>
+              <span class="tag tag--neutral">PySpark</span>
+              <span class="tag tag--neutral">MLflow</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Cloud &amp; Infra</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">AWS (EC2, RDS, ElastiCache, S3, Bedrock)</span>
+              <span class="tag tag--neutral">Docker</span>
+              <span class="tag tag--neutral">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Data Stores</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">Pinecone</span>
+              <span class="tag tag--neutral">FAISS</span>
+              <span class="tag tag--neutral">Elasticsearch</span>
+              <span class="tag tag--neutral">MySQL</span>
+              <span class="tag tag--neutral">Redis</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group__title">Languages</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--neutral">Python (Advanced)</span>
+              <span class="tag tag--neutral">Node.js</span>
+              <span class="tag tag--neutral">SQL</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <h2 class="contact__title" id="contact-heading">Get in touch</h2>
+          <p class="contact__desc">Open to mid-level GenAI&nbsp;/ AI Engineer roles. If you're building something real with LLMs, I'd like to hear about it.</p>
+          <div class="contact__links">
+            <a class="contact__link"
+               href="mailto:jay.professional29@gmail.com">
+              jay.professional29@gmail.com
+            </a>
+            <a class="contact__link"
+               href="https://linkedin.com/in/jay-dhabuwala-1597ab238"
+               target="_blank"
+               rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a class="contact__link"
+               href="https://github.com/djay29"
+               target="_blank"
+               rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">Jay Dhabuwala · Pune, India · 2026</p>
+      <a class="footer__back" href="#">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
