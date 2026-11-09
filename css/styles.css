@@ -653,6 +653,107 @@ a {
 }
 
 
+.project__link {
+  margin-top: var(--s-5);
+}
+
+
+/* =====================================================
+   EXPERIENCE
+   ===================================================== */
+.roles {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+}
+
+.role {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0 var(--s-8);
+  padding: var(--s-8) 0;
+  border-top: 1px solid var(--border);
+}
+
+.role__dates {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+  line-height: 1.65;
+  padding-top: 0.3em;
+}
+
+.role__org {
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: var(--s-1);
+}
+
+.role__title {
+  font-size: var(--t-lg);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: var(--s-4);
+  text-wrap: balance;
+}
+
+.role__list,
+.credential__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.role__list li,
+.credential__list li {
+  position: relative;
+  padding-left: 1.1em;
+  line-height: 1.65;
+  max-width: var(--content-w);
+}
+
+.role__list li::before,
+.credential__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.78em;
+  width: 0.5em;
+  height: 1.5px;
+  background: var(--primary);
+}
+
+.credentials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--s-10) var(--s-12);
+  margin-top: var(--s-16);
+}
+
+.credential__title {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: var(--s-3);
+  letter-spacing: -0.01em;
+}
+
+.credential__title--spaced {
+  margin-top: var(--s-6);
+}
+
+.credential__list li {
+  font-size: var(--t-sm);
+  color: var(--muted);
+}
+
+
 /* =====================================================
    SKILLS
    ===================================================== */
@@ -871,6 +972,15 @@ a {
   }
 
   .narrative__label {
+    padding-top: 0;
+  }
+
+  .role {
+    grid-template-columns: 1fr;
+    gap: var(--s-3) 0;
+  }
+
+  .role__dates {
     padding-top: 0;
   }
 
